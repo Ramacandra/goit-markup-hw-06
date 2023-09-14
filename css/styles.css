@@ -860,14 +860,20 @@ position: absolute;
  left: 14px;
  top:50%;
  transform: translateY(-65%)
- 
 }
 
-.input-group:hover > .input-icon {
+.input-group:hover > .input-icon,
+.input-icon:hover {
   fill:var(--blue-text);
+}
+
+.input-group:hover input,
+.input-icon:hover + input {
+  border-color: var(--blue-text); 
 }
 
 .input-group:focus-within > .input-icon {
   fill:var(--blue-text);
 }
+
 
