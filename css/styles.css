@@ -807,18 +807,18 @@ padding: 40px;
 }
 
 .checkbox-container {
-  display: flex;
- }
+display: flex;
+position: relative;
+}
 
  .input-policies {
+  display: block;
+  width: 15px;
+  height: 16px;
   position: absolute;
-   clip: rect(1px 1px 1px 1px);
-   padding: 0 ;
-   border: 0 ;
-   height: 0px ;
-   width: 0px ;
-   overflow: hidden;
-}
+  top: 5%;
+  left: 5px;
+ }
 
 
 .label-policies {
@@ -828,26 +828,8 @@ padding: 40px;
   font-size: 14px;
   line-height:1.7;
   letter-spacing: 0.03em;
+  padding-left: 30px ;
 }
-
-.label-policies::before {
-  content:"";
-  display: block;
-   width: 20px;
-   height: 15px;
-   border: 1px solid var(--dominant-color);
-   border-radius: 2px;
-   cursor: pointer;
-   margin-right: 9px;
-   margin-bottom: 20px;
-}
-
-.input-policies:checked + .label-policies::before {
-  background-image: url(../images/svgs/icons.svg#icon-check);
-  border-color:var(--blue-text);
-  background-color: var(--blue-text);
-}
-
 
 .suscrip-button {
   display: block; 
